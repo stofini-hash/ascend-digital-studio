@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="ASCEND Digital Studio helps online shops improve product pages and storefront visuals.">
+  <title>ASCEND Digital Studio | Make Your Store Clearer</title>
+  <style>
+    :root { --ink:#17231f; --muted:#61716a; --paper:#f7f8f4; --green:#b8f36b; --line:#dfe5dc; --white:#fff; }
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body { margin:0; font-family:Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif; background:var(--paper); color:var(--ink); line-height:1.55; }
+    a { color:inherit; }
+    .wrap { width:min(1100px, calc(100% - 36px)); margin:auto; }
+    header { padding:22px 0; border-bottom:1px solid var(--line); }
+    .nav { display:flex; justify-content:space-between; align-items:center; gap:18px; }
+    .brand { font-weight:900; letter-spacing:.16em; font-size:1.05rem; text-decoration:none; }
+    .brand span { color:#5e8e25; }
+    .navlinks { display:flex; gap:20px; align-items:center; font-size:.92rem; }
+    .navlinks a { text-decoration:none; }
+    .btn { display:inline-flex; align-items:center; justify-content:center; background:var(--ink); color:white; border:0; border-radius:999px; padding:13px 19px; text-decoration:none; font-weight:750; cursor:pointer; }
+    .btn.lime { background:var(--green); color:var(--ink); }
+    .hero { padding:76px 0 60px; display:grid; grid-template-columns:1.15fr .85fr; gap:44px; align-items:center; }
+    .eyebrow { text-transform:uppercase; letter-spacing:.14em; font-size:.75rem; font-weight:850; color:#5e8e25; }
+    h1 { font-size:clamp(2.6rem, 6vw, 5.2rem); line-height:.98; letter-spacing:-.065em; margin:15px 0 22px; max-width:720px; }
+    .hero p { color:var(--muted); font-size:1.12rem; max-width:570px; }
+    .actions { display:flex; gap:12px; flex-wrap:wrap; margin-top:27px; }
+    .visual { background:#e7eddf; border-radius:28px; padding:24px; min-height:350px; position:relative; overflow:hidden; }
+    .mock { background:white; border:1px solid #d8dfd2; border-radius:17px; padding:18px; transform:rotate(2deg); box-shadow:0 22px 55px #1c302016; }
+    .mock-top { display:flex; justify-content:space-between; font-size:.7rem; letter-spacing:.1em; font-weight:900; border-bottom:1px solid var(--line); padding-bottom:12px; }
+    .mock-image { height:130px; border-radius:12px; margin:16px 0; background:linear-gradient(135deg,#d6e7c0,#f2d9b8 55%,#9cb58c); display:grid; place-items:center; font-size:3rem; }
+    .mock h3 { margin:0 0 5px; }
+    .mock p { font-size:.8rem; margin:0; }
+    .mock-bottom { display:flex; justify-content:space-between; align-items:center; margin-top:15px; font-size:.8rem; }
+    section { padding:54px 0; }
+    .section-head { max-width:650px; margin-bottom:25px; }
+    h2 { font-size:clamp(1.8rem,4vw,3rem); letter-spacing:-.045em; line-height:1.05; margin:9px 0 13px; }
+    .section-head p { color:var(--muted); }
+    .grid { display:grid; grid-template-columns:repeat(4,1fr); gap:14px; }
+    .card { background:var(--white); border:1px solid var(--line); border-radius:18px; padding:20px; display:flex; flex-direction:column; min-height:250px; }
+    .num { font-size:.75rem; font-weight:900; color:#5e8e25; letter-spacing:.12em; }
+    .card h3 { margin:16px 0 8px; font-size:1.1rem; }
+    .card p { color:var(--muted); font-size:.92rem; margin:0 0 18px; }
+    .price { font-size:1.45rem; font-weight:900; margin-top:auto; }
+    .note { font-size:.82rem; color:var(--muted); }
+    .steps { display:grid; grid-template-columns:repeat(3,1fr); gap:15px; }
+    .step { padding:23px; background:#edf2e8; border-radius:18px; }
+    .step strong { display:block; margin:10px 0 6px; font-size:1.05rem; }
+    .contact { background:var(--ink); color:white; border-radius:26px; padding:36px; display:grid; grid-template-columns:1fr auto; gap:20px; align-items:center; }
+    .contact p { color:#c4d0c7; max-width:580px; }
+    footer { padding:28px 0 36px; color:var(--muted); font-size:.82rem; }
+    @media (max-width:800px) { .hero { grid-template-columns:1fr; padding-top:48px; } .visual { min-height:300px; } .grid { grid-template-columns:repeat(2,1fr); } .contact { grid-template-columns:1fr; } }
+    @media (max-width:520px) { .navlinks a:not(.btn) { display:none; } .grid,.steps { grid-template-columns:1fr; } .hero { gap:25px; } .contact { padding:25px; } }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap nav">
+      <a class="brand" href="#" aria-label="ASCEND home">ASCEND<span>.</span></a>
+      <nav class="navlinks" aria-label="Main navigation">
+        <a href="#services">Services</a>
+        <a href="#process">How it works</a>
+        <a class="btn" href="#contact">Work with us</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="wrap hero">
+      <div>
+        <div class="eyebrow">Digital support for online shops</div>
+        <h1>Make your store easier to shop.</h1>
+        <p>ASCEND helps small online businesses present their products clearly with better product copy, storefront concepts and customer-friendly FAQs.</p>
+        <div class="actions">
+          <a class="btn lime" href="#services">Explore services</a>
+          <a class="btn" href="#contact">Request a quote</a>
+        </div>
+        <p class="note">Clear scope. Remote delivery. No exaggerated sales promises.</p>
+      </div>
+      <div class="visual" aria-label="Illustrative product page design preview">
+        <div class="mock">
+          <div class="mock-top"><span>YOUR BRAND</span><span>SHOP / NEW</span></div>
+          <div class="mock-image" aria-hidden="true">✦</div>
+          <h3>Made for everyday use.</h3>
+          <p>Clear, helpful product details that answer shoppers' questions.</p>
+          <div class="mock-bottom"><strong>PRODUCT DETAILS</strong><span>↗</span></div>
+        </div>
+      </div>
+    </div>
+
+    <section id="services">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="eyebrow">Simple starter offers</div>
+          <h2>Small improvements. Clear deliverables.</h2>
+          <p>Starter prices are introductory and confirmed with the customer before work begins. We do not promise a particular increase in sales.</p>
+        </div>
+        <div class="grid">
+          <article class="card">
+            <div class="num">01 / COPY</div><h3>Product-page makeover</h3>
+            <p>One product title and description, rewritten for clarity using details supplied by the shop.</p>
+            <div class="price">US$10</div>
+          </article>
+          <article class="card">
+            <div class="num">02 / VISUAL</div><h3>Store homepage concept</h3>
+            <p>A visual design concept for a homepage. This is a design deliverable, not a live store build.</p>
+            <div class="price">US$15</div>
+          </article>
+          <article class="card">
+            <div class="num">03 / LISTINGS</div><h3>Three product listings</h3>
+            <p>Three product titles and descriptions, formatted consistently and based on verified product facts.</p>
+            <div class="price">US$15</div>
+          </article>
+          <article class="card">
+            <div class="num">04 / FAQ</div><h3>Product FAQ pack</h3>
+            <p>Five customer FAQs and answers for one product, using information the business can confirm.</p>
+            <div class="price">US$8</div>
+          </article>
+        </div>
+        <p class="note" style="margin-top:16px">Prices are proposed test prices, not verified market rates. Payment and delivery arrangements must be agreed before starting.</p>
+      </div>
+    </section>
+
+    <section id="process">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="eyebrow">How it works</div>
+          <h2>A straightforward process.</h2>
+        </div>
+        <div class="steps">
+          <div class="step"><div class="num">STEP 01</div><strong>Share the product or store</strong><span>We review the public page and confirm the scope.</span></div>
+          <div class="step"><div class="num">STEP 02</div><strong>Agree on price and deadline</strong><span>No work begins until the customer approves the deliverables and payment terms.</span></div>
+          <div class="step"><div class="num">STEP 03</div><strong>Review the delivery</strong><span>The customer checks the work and requests the agreed revision, if included.</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="wrap">
+        <div class="contact">
+          <div>
+            <div class="eyebrow" style="color:var(--green)">Let's improve your store</div>
+            <h2>Tell us what your shop needs.</h2>
+            <p>Send the store link and the service you're interested in. We'll confirm availability, scope, timing and payment arrangements before accepting the job.</p>
+          </div>
+          <a class="btn lime" href="mailto:hello@ascendstudio.example?subject=ASCEND%20service%20enquiry">Email ASCEND</a>
+        </div>
+        <p class="note" style="margin-top:12px">Before publishing, replace the example email address with a real business contact. Do not accept customer orders through this demo until contact and payment arrangements are ready.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer><div class="wrap">© <span id="year">2026</span> ASCEND Digital Studio · Independent digital services</div></footer>
+</body>
+</html>
